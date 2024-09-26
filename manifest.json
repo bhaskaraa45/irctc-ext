@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Tatkal Ticket Booker",
+    "version": "1.0",
+    "description": "Automates Tatkal ticket booking on IRCTC.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "*://www.irctc.co.in/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.irctc.co.in/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  

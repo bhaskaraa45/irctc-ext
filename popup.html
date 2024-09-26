@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatkal Ticket Booker</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 300px; padding: 10px; }
+        input { width: 100%; margin-bottom: 10px; padding: 5px; }
+        button { width: 100%; padding: 5px; }
+        p { font-size: 12px; color: #555; }
+    </style>
+</head>
+<body>
+    <h2>Tatkal Ticket Booker</h2>
+    <p>Please log in to your IRCTC account before proceeding.</p>
+    
+    <!-- User Inputs -->
+    <input type="text" id="fromStation" placeholder="From Station Code">
+    <input type="text" id="toStation" placeholder="To Station Code">
+    <input type="text" id="trainNumber" placeholder="Train Number">
+    <input type="text" id="fullName" placeholder="Full Name">
+    <input type="text" id="username" placeholder="IRCTC Username">
+    <input type="password" id="password" placeholder="IRCTC Password">
+    <input type="time" id="executionTime" placeholder="Execution Time">
+    <input type="text" id="seatType" placeholder="Seat Type" value="AC 3 Economy (3E)">
+    
+    <!-- Submit Button -->
+    <button id="bookNow">Book Now</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
